@@ -1,9 +1,16 @@
 <h1 align="center">Plant-Leaf-Disease-Detection-System</h1>
 Deep learning pipeline for potato leaf disease classification (early blight, late blight) | CNN trained on 2,152 images with data augmentation | 97.26% accuracy | TensorFlow · Keras · Scikit-learn · Saturn Cloud
 
+![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat-square&logo=python)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?style=flat-square&logo=tensorflow)
+![Keras](https://img.shields.io/badge/Keras-Deep%20Learning-red?style=flat-square&logo=keras)
+![Accuracy](https://img.shields.io/badge/Accuracy-97.26%25-brightgreen?style=flat-square)
+
+
 
 ## Problem Statement
 Potato crops are highly vulnerable to fungal diseases like Early Blight and Late Blight, which can devastate entire harvests if not detected early. Manual identification requires agricultural expertise that many small-scale farmers lack. This project automates disease detection from leaf images using deep learning — enabling early intervention and reducing crop loss.
+
 
 ## Key Results
 | Metric | Value |
@@ -14,6 +21,7 @@ Potato crops are highly vulnerable to fungal diseases like Early Blight and Late
 | Train / Test Split | 80 : 20 |
 | Batch Size | 32 |
 | Classes | Early Blight, Late Blight, Healthy |
+
 
 ## How It Works
 
@@ -37,6 +45,7 @@ Confidence Score Output
 - **Split:** 80% training / 20% testing
 - **Platform:** Saturn Cloud (cloud-based training environment)
 
+
 ## Model Architecture
 
 - **Type:** Convolutional Neural Network (CNN)
@@ -44,13 +53,13 @@ Confidence Score Output
 - **Input Shape:** (256, 256, 3)
 - **Batch Size:** 32
 
-### Techniques Used
+
+## Techniques Used
 - Data Augmentation (flipping, rotation, zoom) to reduce overfitting
 - Hyperparameter tuning for optimal learning rate and epochs
 - Train/test split for unbiased evaluation
 - Model evaluation using accuracy and loss curves
 
----
 
 ## Results
 
@@ -62,14 +71,12 @@ Confidence Score Output
 
 Training achieved **97.26% accuracy** on the test set through data augmentation and hyperparameter tuning.
 
----
 
 ## Project Screenshots
 
 <img width="1901" height="1016" alt="Screenshot 2024-05-11 144320" src="https://github.com/user-attachments/assets/f1566b56-2032-46a8-b281-3b280fc32e9c" />
 
 <img width="1870" height="827" alt="Screenshot 2024-05-11 144430" src="https://github.com/user-attachments/assets/44316599-f870-42b3-814d-40710bfc0334" />
-
 
 
 ## Tech Stack
@@ -84,6 +91,25 @@ Training achieved **97.26% accuracy** on the test set through data augmentation 
 | Matplotlib | Visualising training curves |
 | Saturn Cloud | Cloud-based GPU training environment |
 
+---
+
+## Getting Started
+
+### Prerequisites
+```bash
+pip install tensorflow keras scikit-learn numpy pandas matplotlib
+```
+
+### Clone the Repository
+```bash
+git clone https://github.com/adarsh288/plant-leaf-disease-detection.git
+cd plant-leaf-disease-detection
+```
+
+### Run the Notebook
+```bash
+jupyter notebook Plant_Disease_Detection.ipynb
+```
 
 ---
 
